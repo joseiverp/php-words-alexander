@@ -1,0 +1,134 @@
+:root {
+  color-scheme: light;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #202a36;
+  background: #f3f6fa;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.contenedor {
+  width: min(100% - 2rem, 960px);
+  margin: 0 auto;
+}
+
+.cabecera {
+  padding: 3rem 0;
+  color: #fff;
+  background: #563d7c;
+}
+
+.marca {
+  margin: 0 0 0.5rem;
+  color: #e5d9f5;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.cabecera h1 {
+  margin: 0;
+  font-size: clamp(2rem, 6vw, 3.25rem);
+}
+
+.cabecera #subtitulo {
+  margin: 0.5rem 0;
+  color: #eee7f7;
+}
+
+.cabecera #version {
+  color: #d8c8eb;
+}
+
+main {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+#controles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+#controles input,
+#controles select {
+  min-width: 220px;
+  flex: 1;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid #cbd3df;
+  border-radius: 0.5rem;
+  background: #fff;
+  color: inherit;
+  font: inherit;
+}
+
+#controles input:focus,
+#controles select:focus {
+  outline: 3px solid #c8b5e2;
+  border-color: #73539b;
+}
+
+.contador {
+  margin: 1.25rem 0 0.75rem;
+  color: #596575;
+}
+
+.lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tarjeta {
+  padding: 1.1rem;
+  border: 1px solid #e0e5ec;
+  border-radius: 0.75rem;
+  background: #fff;
+  box-shadow: 0 3px 10px rgb(31 42 55 / 5%);
+}
+
+.tarjeta-cabecera {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.65rem;
+}
+
+.tarjeta strong {
+  color: #563d7c;
+  font-size: 1.1rem;
+}
+
+.categoria {
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  background: #f0eaf7;
+  color: #563d7c;
+  font-size: 0.75rem;
+}
+
+.tarjeta p {
+  margin: 0;
+  color: #596575;
+  line-height: 1.5;
+}
+
+.sin-resultados {
+  grid-column: 1 / -1;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: #fff;
+  color: #596575;
+}

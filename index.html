@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PHP Words</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="cabecera">
+    <div class="contenedor">
+      <p class="marca">PHP Words</p>
+      <h1 id="titulo"></h1>
+      <p id="subtitulo"></p>
+      <small id="version"></small>
+    </div>
+  </header>
+
+  <main class="contenedor">
+    <section id="controles" class="controles" aria-label="Filtros de palabras"></section>
+    <p id="contador" class="contador" aria-live="polite"></p>
+    <ul id="lista" class="lista" aria-label="Palabras reservadas de PHP"></ul>
+  </main>
+
+  <script src="js/config.js"></script>
+  <script src="js/palabras.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/buscador.js"></script>
+  <script src="js/categorias.js"></script>
+</body>
+</html>

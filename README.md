@@ -8,3 +8,4 @@ Abre `index.html` directamente en un navegador; no requiere servidor ni instalac
 Modificación en el readme en GitHub
 
 ## Segunda modificación
+Comentario añadido por Jose desde una rama nueva.
